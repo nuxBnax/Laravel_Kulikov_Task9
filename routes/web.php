@@ -5,7 +5,6 @@ use App\Models\News;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
-    // NewsHidden::dispatch(News::first());
     return view('welcome');
 });
 
@@ -18,7 +17,6 @@ Route::get('/news/create-test', function ()
 	$news->body = 'Title news body 2';
 
 	$news->save();
-    // echo $news;
 	return $news;
 });
 
